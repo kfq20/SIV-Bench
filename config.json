@@ -1,0 +1,14 @@
+{
+    "model": {
+        "InternVL3-8B": {}
+    },
+    "data": {
+        "RelationRecognition": {
+            "class": "RelationMME",
+            "nframe": 16,
+            "fps": -1,
+            "relation_cls": false,
+            "subtitle_version": "sub"
+        }
+    }
+}
