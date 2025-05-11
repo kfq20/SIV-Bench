@@ -3,12 +3,11 @@
         "InternVL3-8B": {}
     },
     "data": {
-        "RelationRecognition": {
-            "class": "RelationMME",
+        "SIV-Bench": {
+            "class": "SIVBench",
             "nframe": 16,
             "fps": -1,
-            "relation_cls": false,
-            "subtitle_version": "sub"
+            "subtitle_version": "origin"
         }
     }
 }

@@ -33,13 +33,13 @@ videomme_dataset = {
     'Video-MME_0.5fps_subs': partial(VideoMME, dataset='Video-MME', fps=0.5, use_subtitle=True),
 }
 
-relationmme_dataset = {
-    'Relation-MME_8frame': partial(RelationMME, dataset='Relation-MME', nframe=8),
-    'Relation-MME_64frame': partial(RelationMME, dataset='Relation-MME', nframe=64),
-    'Relation-MME_8frame_subs': partial(RelationMME, dataset='Relation-MME', nframe=8, use_subtitle=True),
-    'Relation-MME_1fps': partial(RelationMME, dataset='Relation-MME', fps=1.0),
-    'Relation-MME_0.5fps': partial(RelationMME, dataset='Relation-MME', fps=0.5),
-    'Relation-MME_0.5fps_subs': partial(RelationMME, dataset='Relation-MME', fps=0.5, use_subtitle=True),
+sivbench_dataset = {
+    'SIV-Bench_8frame': partial(SIVBench, dataset='SIV-Bench', nframe=8),
+    'SIV-Bench_64frame': partial(SIVBench, dataset='SIV-Bench', nframe=64),
+    'SIV-Bench_8frame_subs': partial(SIVBench, dataset='SIV-Bench', nframe=8, use_subtitle=True),
+    'SIV-Bench_1fps': partial(SIVBench, dataset='SIV-Bench', fps=1.0),
+    'SIV-Bench_0.5fps': partial(SIVBench, dataset='SIV-Bench', fps=0.5),
+    'SIV-Bench_0.5fps_subs': partial(SIVBench, dataset='SIV-Bench', fps=0.5, use_subtitle=True),
 }
 
 longvideobench_dataset = {
@@ -167,7 +167,7 @@ video_mmlu_dataset = {
 supported_video_datasets = {}
 
 dataset_groups = [
-    relationmme_dataset, mmbench_video_dataset, mvbench_dataset, videomme_dataset, longvideobench_dataset,
+    sivbench_dataset, mmbench_video_dataset, mvbench_dataset, videomme_dataset, longvideobench_dataset,
     mlvu_dataset, tempcompass_dataset, cgbench_dataset, worldsense_dataset, tamperbench_dataset,
     megabench_dataset, qbench_video_dataset, moviechat1k_dataset, vdc_dataset
 

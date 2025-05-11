@@ -244,13 +244,13 @@ def main():
     # --- Argument Parsing ---
     parser = argparse.ArgumentParser(description="Evaluate model QA performance.")
     parser.add_argument(
-        "--output_dir",
+        "--output_file",
         type=str,
         default="output/GPT-4o_SIV-Bench.pkl",
         help="Template for the input pkl file path. {MODEL} will be replaced."
     )
     args = parser.parse_args()
-    output_pkl_path = args.output_dir
+    output_pkl_path = args.output_file
     output_raw_data = convert_pickle_to_json(output_pkl_path, output_pkl_path.replace('.pkl', '.json'))
     
     with open(QA_SRC_PATH, 'r', encoding='utf-8') as f:

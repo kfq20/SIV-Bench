@@ -27,7 +27,7 @@ from .vlm2bench import VLM2Bench
 
 from .mmbench_video import MMBenchVideo
 from .videomme import VideoMME
-from .relationmme import RelationMME
+from .siv_bench import SIVBench
 from .mvbench import MVBench, MVBench_MP4
 from .tamperbench import MVTamperBench
 from .miabench import MIABench
@@ -160,7 +160,7 @@ IMAGE_DATASET = [
 
 
 VIDEO_DATASET = [
-    RelationMME, MMBenchVideo, VideoMME, MVBench, MVBench_MP4, MVTamperBench,
+    SIVBench, MMBenchVideo, VideoMME, MVBench, MVBench_MP4, MVTamperBench,
     LongVideoBench, WorldSense, VDC, MovieChat1k, MEGABench,
     MLVU, MLVU_MCQ, MLVU_OpenEnded,
     TempCompass, TempCompass_MCQ, TempCompass_Captioning, TempCompass_YorN,
